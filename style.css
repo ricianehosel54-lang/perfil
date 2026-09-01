@@ -1,0 +1,94 @@
+/* Redefinição básica de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página com Linear Gradient Vibrante */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d91cff 0%, #540075 100%);
+    padding: 20px;
+}
+
+/* Cartão de Perfil Semitransparente (Efeito Vidro Fosco) */
+.profile-card {
+    background-color: rgba(255, 255, 255, 0.15); /* Opacidade apenas no fundo usando RGBA */
+    backdrop-filter: blur(15px); /* Reforça o efeito de vidro fosco */
+    -webkit-backdrop-filter: blur(15px); /* Compatibilidade Safari */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Animação suave ao passar o mouse no cartão */
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagem de perfil - Mantém 100% de opacidade */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tipografia e Contraste do Nome */
+.profile-name {
+    color: #ffffff; /* Alto contraste sobre o fundo escuro/roxo */
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Profissão do Desenvolvedor */
+.profile-role {
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Estilo do Botão com Gradiente Próprio */
+.portfolio-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #eccfd6 0%, #f59191 100%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 65, 108, 0.4);
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito Hover do Botão (Diminuição leve da opacidade geral do elemento) */
+.portfolio-btn:hover {
+    opacity: 0.85; /* Altera a opacidade do botão inteiro na interação */
+}
+
+/* Efeito de clique do botão */
+.portfolio-btn:active {
+    transform: scale(0.98);
+}
